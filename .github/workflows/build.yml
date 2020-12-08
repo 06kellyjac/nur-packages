@@ -16,7 +16,7 @@ jobs:
         nixPath:
           - nixpkgs=channel:nixos-unstable
           - nixpkgs=channel:nixpkgs-unstable
-          - nixpkgs=channel:nixos-20.03
+          - nixpkgs=channel:nixos-20.09
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -43,8 +43,7 @@ jobs:
           -I nixpkgs=$(nix-instantiate --find-file nixpkgs) \
           -I $PWD
     - name: Build nix packages
-      # TODO switch to default nixpkgs channel once nix-build-uncached 1.0.0 is in stable
-      run: nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
+      run: nix run -I 'nixpkgs=channel:nixos-20.09' nixpkgs.nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
     # - name: Trigger NUR update
     #   if: ${{ matrix.nurRepo != 'j-k' }}
     #   run: curl -XPOST "https://nur-update.herokuapp.com/update?repo=${{ matrix.nurRepo }}"
