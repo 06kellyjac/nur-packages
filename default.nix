@@ -16,6 +16,7 @@
 
   conform = pkgs.callPackage ./pkgs/conform { };
   container-diff = pkgs.callPackage ./pkgs/container-diff { };
+  infracost = pkgs.callPackage ./pkgs/infracost { };
   nerdctl = pkgs.callPackage ./pkgs/nerdctl { };
   scorecard = pkgs.callPackage ./pkgs/scorecard { };
 }
