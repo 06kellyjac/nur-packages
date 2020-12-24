@@ -19,6 +19,7 @@
   container-diff = pkgs.callPackage ./pkgs/container-diff { };
   flat-remix-theme = pkgs.callPackage ./pkgs/themes/flat-remix { };
   go-jira = pkgs.callPackage ./pkgs/go-jira { };
+  hunter = pkgs.callPackage ./pkgs/hunter { };
   infracost = pkgs.callPackage ./pkgs/infracost { };
   mons = pkgs.callPackage ./pkgs/mons { };
   nerdctl = pkgs.callPackage ./pkgs/nerdctl { };
