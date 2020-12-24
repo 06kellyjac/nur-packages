@@ -14,6 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  conform = pkgs.callPackage ./pkgs/conform { };
   container-diff = pkgs.callPackage ./pkgs/container-diff { };
   nerdctl = pkgs.callPackage ./pkgs/nerdctl { };
   scorecard = pkgs.callPackage ./pkgs/scorecard { };
