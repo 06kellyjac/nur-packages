@@ -16,6 +16,7 @@
 
   conform = pkgs.callPackage ./pkgs/conform { };
   container-diff = pkgs.callPackage ./pkgs/container-diff { };
+  go-jira = pkgs.callPackage ./pkgs/go-jira { };
   infracost = pkgs.callPackage ./pkgs/infracost { };
   mons = pkgs.callPackage ./pkgs/mons { };
   nerdctl = pkgs.callPackage ./pkgs/nerdctl { };
