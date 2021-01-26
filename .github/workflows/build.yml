@@ -29,7 +29,7 @@ jobs:
       run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
     - name: Setup cachix
       uses: cachix/cachix-action@v8
-      if: ${{ matrix.cachixName != 'j-k-nur' }}
+      if: ${{ matrix.cachixName == 'j-k-nur' }}
       with:
         name: ${{ matrix.cachixName }}
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
@@ -45,5 +45,5 @@ jobs:
     - name: Build nix packages
       run: nix run -I 'nixpkgs=channel:nixos-20.09' nixpkgs.nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
     - name: Trigger NUR update
-      if: ${{ matrix.nurRepo != 'j-k' }}
+      if: ${{ matrix.nurRepo == 'j-k' }}
       run: curl -XPOST "https://nur-update.herokuapp.com/update?repo=${{ matrix.nurRepo }}"
