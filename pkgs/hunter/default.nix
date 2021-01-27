@@ -11,11 +11,11 @@
 assert stdenv.isDarwin -> IOKit != null;
 rustPlatform.buildRustPackage rec {
   pname = "hunter";
-  version = "2e95cc567c751263f8c318399f3c5bb01d36962a";
+  version = "stable-2020-10-07";
 
   src = fetchgit {
     url = "https://github.com/06kellyjac/${pname}.git";
-    rev = "${version}";
+    rev = "2e95cc567c751263f8c318399f3c5bb01d36962a";
     sha256 = "0wrp37hzd1hihc99dlr1dq8b0x6vymrxl4pr365l093psm4zdhwq";
   };
 
