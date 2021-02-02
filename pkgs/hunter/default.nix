@@ -44,5 +44,6 @@ rustPlatform.buildRustPackage rec {
     license = licenses.wtfpl;
     maintainers = with maintainers; [ jk ];
     platforms = platforms.unix;
+    broken = true; # https://github.com/NixOS/nixpkgs/pull/111579
   };
 }
