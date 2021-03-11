@@ -20,6 +20,7 @@
   dockle = pkgs.callPackage ./pkgs/dockle { };
   flat-remix-theme = pkgs.callPackage ./pkgs/themes/flat-remix { };
   go-jira = pkgs.callPackage ./pkgs/go-jira { };
+  nerdfont-hasklig = pkgs.callPackage ./pkgs/fonts/nerdfont-hasklig { };
   hunter = pkgs.callPackage ./pkgs/hunter { };
   infracost = pkgs.callPackage ./pkgs/infracost { };
   scorecard = pkgs.callPackage ./pkgs/scorecard { };
