@@ -9,4 +9,5 @@
   https-everywhere = callPackage ./https-everywhere { };
   laboratory-csp-toolkit = callPackage ./laboratory-csp-toolkit { };
   noscript = callPackage ./noscript { };
+  preact-devtools = callPackage ./preact-devtools { };
 }
