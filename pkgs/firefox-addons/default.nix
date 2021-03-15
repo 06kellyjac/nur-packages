@@ -16,4 +16,5 @@
   tree-style-tab = callPackage ./tree-style-tab { };
   ublock-origin = callPackage ./ublock-origin { };
   view-image = callPackage ./view-image { };
+  zotero-connector = callPackage ./zotero-connector { };
 }
