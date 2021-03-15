@@ -17,6 +17,9 @@ in
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  # Defined in firefox-addons
+  firefox-addons = callPackage ./pkgs/firefox-addons { };
+
   comma = callPackage ./pkgs/comma { };
   conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
