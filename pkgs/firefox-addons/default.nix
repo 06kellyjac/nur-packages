@@ -6,4 +6,5 @@
   clearurls = callPackage ./clearurls { };
   decentraleyes = callPackage ./decentraleyes { };
   disable-webrtc = callPackage ./disable-webrtc { };
+  https-everywhere = callPackage ./https-everywhere { };
 }
