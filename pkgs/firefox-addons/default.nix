@@ -8,4 +8,5 @@
   disable-webrtc = callPackage ./disable-webrtc { };
   https-everywhere = callPackage ./https-everywhere { };
   laboratory-csp-toolkit = callPackage ./laboratory-csp-toolkit { };
+  noscript = callPackage ./noscript { };
 }
