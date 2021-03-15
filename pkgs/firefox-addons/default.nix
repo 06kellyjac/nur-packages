@@ -10,4 +10,5 @@
   laboratory-csp-toolkit = callPackage ./laboratory-csp-toolkit { };
   noscript = callPackage ./noscript { };
   preact-devtools = callPackage ./preact-devtools { };
+  react-devtools = callPackage ./react-devtools { };
 }
