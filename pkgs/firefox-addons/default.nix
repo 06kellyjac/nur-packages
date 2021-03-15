@@ -14,4 +14,5 @@
   refined-github = callPackage ./refined-github { };
   stylus = callPackage ./stylus { };
   tree-style-tab = callPackage ./tree-style-tab { };
+  ublock-origin = callPackage ./ublock-origin { };
 }
