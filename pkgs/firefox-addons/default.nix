@@ -12,4 +12,5 @@
   preact-devtools = callPackage ./preact-devtools { };
   react-devtools = callPackage ./react-devtools { };
   refined-github = callPackage ./refined-github { };
+  stylus = callPackage ./stylus { };
 }
