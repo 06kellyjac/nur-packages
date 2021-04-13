@@ -23,7 +23,6 @@ in
   comma = callPackage ./pkgs/comma { };
   conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
-  dockle = callPackage ./pkgs/dockle { };
   flat-remix-theme = callPackage ./pkgs/themes/flat-remix { };
   go-jira = callPackage ./pkgs/go-jira { };
   google-fonts = callPackage ./pkgs/fonts/google-fonts { };
