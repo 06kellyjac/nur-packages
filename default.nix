@@ -26,6 +26,7 @@ in
   dockle = callPackage ./pkgs/dockle { };
   flat-remix-theme = callPackage ./pkgs/themes/flat-remix { };
   go-jira = callPackage ./pkgs/go-jira { };
+  google-fonts = callPackage ./pkgs/fonts/google-fonts { };
   nerdfont-hasklig = callPackage ./pkgs/fonts/nerdfont-hasklig { };
   hunter = callPackage ./pkgs/hunter { };
   infracost = callPackage ./pkgs/infracost { };
