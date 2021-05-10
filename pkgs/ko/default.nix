@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   pname = "ko";
-  version = "0.8.2";
+  version = "0.8.3";
 
   src = fetchFromGitHub {
     owner = "google";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-dk4W4v8tKYVti4srxAoaE6kLl4/27WEeTVwhvm7di9E=";
+    sha256 = "sha256-r07bFFDBB7pFcVpfaHeuE8dqE+SwLQRzY2bpoZyxwFU=";
 
     # required for the tests, see test/kodata
     fetchSubmodules = true;
