@@ -9,7 +9,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  inherit (pkgs) callPackage;
+  inherit (pkgs) callPackage recurseIntoAttrs;
 in
 {
   # The `lib`, `modules`, and `overlay` names are special
@@ -18,7 +18,7 @@ in
   overlays = import ./overlays; # nixpkgs overlays
 
   # Defined in firefox-addons
-  firefox-addons = callPackage ./pkgs/firefox-addons { };
+  firefox-addons = recurseIntoAttrs (callPackage ./pkgs/firefox-addons { });
 
   bane = callPackage ./pkgs/bane { };
   comma = callPackage ./pkgs/comma { };
