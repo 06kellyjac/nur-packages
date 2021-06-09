@@ -25,7 +25,6 @@ in
   conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
   flat-remix-theme = callPackage ./pkgs/themes/flat-remix { };
-  go-jira = callPackage ./pkgs/go-jira { };
   google-fonts = callPackage ./pkgs/fonts/google-fonts { };
   goss = callPackage ./pkgs/goss { };
   hunter = callPackage ./pkgs/hunter { };
