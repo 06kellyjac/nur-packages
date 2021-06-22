@@ -21,6 +21,7 @@ in
   firefox-addons = recurseIntoAttrs (callPackage ./pkgs/firefox-addons { });
 
   bane = callPackage ./pkgs/bane { };
+  crane = callPackage ./pkgs/crane { };
   comma = callPackage ./pkgs/comma { };
   conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
