@@ -6,16 +6,20 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> { } }:
 
 let
   inherit (pkgs) callPackage recurseIntoAttrs;
 in
-{
+rec {
   # The `lib`, `modules`, and `overlay` names are special
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
+
+  # Dev utils
+  fetchDenoTarball = callPackage ./pkgs/deno-extra/fetchDenoTarball.nix { };
+  bundleDeno = callPackage ./pkgs/deno-extra/bundleDeno.nix { inherit fetchDenoTarball; };
 
   # Defined in firefox-addons
   firefox-addons = recurseIntoAttrs (callPackage ./pkgs/firefox-addons { });
