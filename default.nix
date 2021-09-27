@@ -32,7 +32,6 @@ rec {
   google-fonts = callPackage ./pkgs/fonts/google-fonts { };
   grpc-web = callPackage ./pkgs/grpc-web { };
   infracost = callPackage ./pkgs/infracost { };
-  ko = callPackage ./pkgs/ko { };
   konstraint = callPackage ./pkgs/konstraint { };
   nerdfont-hasklig = callPackage ./pkgs/fonts/nerdfont-hasklig { };
   rakkess = callPackage ./pkgs/rakkess { };
