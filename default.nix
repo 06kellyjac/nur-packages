@@ -35,7 +35,6 @@ rec {
   konstraint = callPackage ./pkgs/konstraint { };
   nerdfont-hasklig = callPackage ./pkgs/fonts/nerdfont-hasklig { };
   rakkess = callPackage ./pkgs/rakkess { };
-  scorecard = callPackage ./pkgs/scorecard { };
   subo = callPackage ./pkgs/subo { };
   tuftool = callPackage ./pkgs/tuftool { };
 }
