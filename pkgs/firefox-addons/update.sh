@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 get_xpi_url() {
-	curl -s "https://addons.mozilla.org/api/v5/addons/addon/${1}/?app=firefox" | jq -r ".current_version.files[].url" | grep ".xpi"
+	curl -s "https://addons.mozilla.org/api/v5/addons/addon/${1}/?app=firefox" | jq -r ".current_version.file.url" | grep ".xpi"
 }
 
 replace_sha() {
