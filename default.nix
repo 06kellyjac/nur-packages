@@ -21,9 +21,6 @@ rec {
   fetchDenoTarball = callPackage ./pkgs/deno-extra/fetchDenoTarball.nix { };
   bundleDeno = callPackage ./pkgs/deno-extra/bundleDeno.nix { inherit fetchDenoTarball; };
 
-  # Defined in firefox-addons
-  firefox-addons = recurseIntoAttrs (callPackage ./pkgs/firefox-addons { });
-
   bane = callPackage ./pkgs/bane { };
   comma = callPackage ./pkgs/comma { };
   conform = callPackage ./pkgs/conform { };
