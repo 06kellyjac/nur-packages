@@ -30,7 +30,6 @@ rec {
   container-diff = callPackage ./pkgs/container-diff { };
   flat-remix-theme = callPackage ./pkgs/themes/flat-remix { };
   google-fonts = callPackage ./pkgs/fonts/google-fonts { };
-  grpc-web = callPackage ./pkgs/grpc-web { };
   konstraint = callPackage ./pkgs/konstraint { };
   nerdfont-hasklig = callPackage ./pkgs/fonts/nerdfont-hasklig { };
   rakkess = callPackage ./pkgs/rakkess { };
