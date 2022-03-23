@@ -24,8 +24,7 @@ rec {
   bane = callPackage ./pkgs/bane { };
   conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
+  hasklig-nerdfont = pkgs.nerdfonts.override { fonts = [ "Hasklig" ]; };
   kubernetes-bom = callPackage ./pkgs/kubernetes-bom { };
-  nerdfont-hasklig = callPackage ./pkgs/fonts/nerdfont-hasklig { };
-  subo = callPackage ./pkgs/subo { };
   tuftool = callPackage ./pkgs/tuftool { };
 }
