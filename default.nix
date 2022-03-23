@@ -22,7 +22,6 @@ rec {
   bundleDeno = callPackage ./pkgs/deno-extra/bundleDeno.nix { inherit fetchDenoTarball; };
 
   bane = callPackage ./pkgs/bane { };
-  comma = callPackage ./pkgs/comma { };
   conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
   flat-remix-theme = callPackage ./pkgs/themes/flat-remix { };
