@@ -28,7 +28,4 @@ rec {
   nerdfont-hasklig = callPackage ./pkgs/fonts/nerdfont-hasklig { };
   subo = callPackage ./pkgs/subo { };
   tuftool = callPackage ./pkgs/tuftool { };
-
-  # Can't update on nixpkgs because buildGo117Module isn't stable
-  tailscale = callPackage ./pkgs/tailscale { };
 }
