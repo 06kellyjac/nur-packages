@@ -22,7 +22,6 @@ rec {
   bundleDeno = callPackage ./pkgs/deno-extra/bundleDeno.nix { inherit fetchDenoTarball; };
 
   bane = callPackage ./pkgs/bane { };
-  conform = callPackage ./pkgs/conform { };
   container-diff = callPackage ./pkgs/container-diff { };
   hasklig-nerdfont = pkgs.nerdfonts.override { fonts = [ "Hasklig" ]; };
   kdigger = callPackage ./pkgs/kdigger { };
