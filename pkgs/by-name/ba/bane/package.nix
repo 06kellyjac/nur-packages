@@ -8,10 +8,10 @@ buildGoModule rec {
     owner = "genuinetools";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-DvLK42JQlzGOaGpZoFl74nIXZl7U7g80lNTWs4LY438=";
+    hash = "sha256-DvLK42JQlzGOaGpZoFl74nIXZl7U7g80lNTWs4LY438=";
   };
 
-  vendorSha256 = null;
+  vendorHash = null;
 
   ldflags = [ "-s" "-w" "-X github.com/genuinetools/bane/version.VERSION=v${version}" ];
 

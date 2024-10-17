@@ -8,10 +8,10 @@ rustPlatform.buildRustPackage rec {
     owner = "awslabs";
     repo = "tough";
     rev = "tuftool-v${version}";
-    sha256 = "sha256-B4amCeePbF72zdTUC5PyT90ZVyMSEPOzJ4Vjsbh3Bl0=";
+    hash = "sha256-B4amCeePbF72zdTUC5PyT90ZVyMSEPOzJ4Vjsbh3Bl0=";
   };
 
-  cargoSha256 = "sha256-p59RY2HpmYFK67+dwB6Dsy6+cZSUBgBGlELTnV5FkVo=";
+  cargoHash = "sha256-p59RY2HpmYFK67+dwB6Dsy6+cZSUBgBGlELTnV5FkVo=";
 
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ openssl ];

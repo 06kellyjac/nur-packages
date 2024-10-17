@@ -8,9 +8,9 @@ buildGoModule rec {
     owner = "GoogleContainerTools";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-4sk6DqScaNf0tMZQ6Hj40ZEklFTUFwAkN63v67nUFn8=";
+    hash = "sha256-4sk6DqScaNf0tMZQ6Hj40ZEklFTUFwAkN63v67nUFn8=";
   };
-  vendorSha256 = null;
+  vendorHash = null;
 
   # Don't build documentation tooling
   excludedPackages = "hack";
