@@ -5,7 +5,8 @@
   lib ? pkgs.lib,
 }:
 let
-  autoCaller = import "${pkgs.path}/pkgs/top-level/by-name-overlay.nix";
+  # need to copy form upstream nixpkgs
+  autoCaller = import ./by-name-overlay.nix { inherit lib; };
   autoCalledPackages = autoCaller ./by-name;
 
   extraPackages = _final: _prev: import ./extra-packages.nix { inherit pkgs; };
