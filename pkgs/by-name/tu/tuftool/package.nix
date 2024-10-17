@@ -1,4 +1,10 @@
-{ lib, rustPlatform, fetchFromGitHub, pkg-config, openssl }:
+{ lib
+, rustPlatform
+, fetchFromGitHub
+, pkg-config
+, openssl
+,
+}:
 
 rustPlatform.buildRustPackage rec {
   pname = "tuftool";
@@ -30,7 +36,11 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/awslabs/tough/";
     changelog = "https://github.com/awslabs/tough/blob/tuftool-v${version}/tuftool/CHANGELOG.md";
     description = "A Rust command-line utility for generating and signing TUF repositories";
-    license = with licenses; [ asl20 /* or */ mit ];
+    license = with licenses; [
+      asl20
+      # or
+      mit
+    ];
     maintainers = with maintainers; [ jk ];
   };
 }

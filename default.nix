@@ -6,15 +6,17 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs ? import <nixpkgs> { } }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 let
   nurPkgs = import ./pkgs/top-level.nix { inherit pkgs; };
 in
 # our packages + flake specific extras
-nurPkgs // {
+nurPkgs
+// {
   # The `lib`, `modules`, and `overlay` names are special
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 }
-

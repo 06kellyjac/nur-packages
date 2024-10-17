@@ -1,4 +1,8 @@
-{ lib, buildGoModule, fetchFromGitHub }:
+{
+  lib,
+  buildGoModule,
+  fetchFromGitHub,
+}:
 
 buildGoModule rec {
   pname = "bane";
@@ -13,7 +17,11 @@ buildGoModule rec {
 
   vendorHash = null;
 
-  ldflags = [ "-s" "-w" "-X github.com/genuinetools/bane/version.VERSION=v${version}" ];
+  ldflags = [
+    "-s"
+    "-w"
+    "-X github.com/genuinetools/bane/version.VERSION=v${version}"
+  ];
 
   doInstallCheck = false;
   installCheckPhase = ''
